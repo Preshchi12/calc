@@ -11,11 +11,10 @@ session_start();
 </head>
 <body>
     <?php
-   
     var_dump($_SESSION);
     ?>
 
-    <h2>Welcome <?php echo isset($_SESSION['full_name']) ? $_SESSION['full_name'] : 'User'; ?> to your dashboard</h2>
+    <h2>Welcome <?php echo isset($_SESSION['username']) ? $_SESSION['full_name'] : 'User'; ?> to your dashboard</h2>
 
 </body>
 </html>

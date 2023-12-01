@@ -7,7 +7,7 @@ $phn=$_POST['phone'];
 $sel=$con->query("SELECT * FROM calculus_tb WHERE email='$email' AND phone='$phn'");
 if ($sel->num_rows>0) {
     $row = $sel->fetch_assoc();
- $_SESSION['full_name'] = $row['full_name'];
+ $_SESSION['username'] = $row['full_name'];
     header("location:dashboard.php");
 }else {
     header("location:login?msg=incorrect password or email");
